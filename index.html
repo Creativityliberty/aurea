@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#101a20" />
+  <meta name="description" content="AURÉA, studio d’architecture contemporaine. Des lieux rares, pensés pour ressentir." />
+  <title>AURÉA — L’architecture à l’état d’émotion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400;1,9..40,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="assets/aurea-poster.webp" fetchpriority="high" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#accueil" aria-label="AURÉA, retour à l'accueil">
+        <svg class="brand-mark" viewBox="0 0 34 38" fill="none" aria-hidden="true">
+          <path d="M3 34.5 17 3.5 31 34.5" stroke="currentColor" stroke-width="1.35" />
+          <path d="M9.2 23.5h15.6" stroke="currentColor" stroke-width="1.35" />
+          <path d="M17 3.5v18" stroke="currentColor" stroke-width="0.8" opacity=".65" />
+        </svg>
+        <span class="brand-type"><strong>AURÉA</strong><small>ARCHITECTURE STUDIO</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="#projets">Projets</a>
+        <a href="#expertise">Piliers</a>
+        <a href="#methode">Méthode</a>
+        <a href="#approche">Le studio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="header-contact" href="#contact">Discutons de votre projet <span aria-hidden="true">↗</span></a>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Menu mobile" inert>
+    <div class="mobile-menu-inner">
+      <span class="menu-kicker">NAVIGATION</span>
+      <a href="#accueil"><span>01</span> Accueil</a>
+      <a href="#projets"><span>02</span> Projets</a>
+      <a href="#expertise"><span>03</span> Piliers d'expertise</a>
+      <a href="#methode"><span>04</span> Notre méthode</a>
+      <a href="#approche"><span>05</span> Le studio</a>
+      <a href="#contact"><span>06</span> Contact</a>
+      <p>AURÉA — Lieux singuliers, émotions durables.</p>
+    </div>
+  </nav>
+
+  <main id="contenu">
+    <!-- HERO SECTION -->
+    <section class="hero" id="accueil" aria-labelledby="hero-title">
+      <div class="hero-media" aria-hidden="true">
+        <video id="hero-video" autoplay muted playsinline loop preload="metadata" poster="assets/aurea-poster.webp" disablepictureinpicture>
+          <source src="assets/aurea-hero.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="hero-frame" aria-hidden="true"></div>
+
+      <div class="hero-content shell">
+        <div class="hero-content-inner">
+          <p class="eyebrow"><span class="eyebrow-line"></span> L'ART D'HABITER <span class="eyebrow-index">/ 001</span></p>
+          <h1 id="hero-title">L'architecture<br />à l'état <em>d'émotion.</em></h1>
+          <p class="hero-lead">Nous dessinons des lieux qui ne se contentent pas d'être admirés. Des espaces qui se vivent, se ressentent et traversent le temps.</p>
+          <div class="hero-actions">
+            <a class="cta-primary" href="#projets">Découvrir les réalisations <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3.5 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="cta-quiet" href="#expertise">Notre vision <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-footer shell">
+        <a class="scroll-cue" href="#approche"><span class="scroll-track"><span class="scroll-line"></span></span><span>DÉFILER POUR EXPLORER</span></a>
+        <div class="hero-footer-right">
+          <button class="motion-toggle" id="motion-toggle" type="button" aria-pressed="false" aria-label="Mettre la vidéo en pause"><span class="motion-icon" aria-hidden="true"></span><span class="motion-label">PAUSE</span></button>
+          <span class="hero-footer-divider" aria-hidden="true"></span>
+          <span class="hero-location">HORIZON 01 <span class="bullet" aria-hidden="true">·</span> CÔTE ATLANTIQUE</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 01: NOTRE PHILOSOPHIE & CHIFFRES CLÉS -->
+    <section class="intro-section" id="approche" aria-labelledby="approche-title">
+      <div class="shell intro-grid">
+        <p class="section-label"><span class="section-num">01</span> NOTRE PHILOSOPHIE</p>
+        <div class="intro-main">
+          <h2 id="approche-title">Créer moins.<br /><em>Ressentir davantage.</em></h2>
+          <p>Nous croyons en une architecture qui laisse parler la lumière, la matière et le paysage. Une écriture sensible, où chaque détail trouve sa juste place, libérée des artifices pour révéler la grandeur du site.</p>
+        </div>
+        <div class="intro-aside">
+          <div class="thin-star" aria-hidden="true">✳</div>
+          <span>ARCHITECTURE<br/>INTEMPORELLE</span>
+        </div>
+      </div>
+
+      <!-- METRICS BANNER -->
+      <div class="shell metrics-strip">
+        <div class="metric-card reveal-on-scroll">
+          <span class="metric-num">14<em>+</em></span>
+          <span class="metric-title">Années d'exigence</span>
+          <p class="metric-desc">Un savoir-faire rodé aux chantiers les plus complexes en France et à l'international.</p>
+        </div>
+        <div class="metric-card reveal-on-scroll">
+          <span class="metric-num">28</span>
+          <span class="metric-title">Œuvres singulières</span>
+          <p class="metric-desc">Résidences d'exception, pavillons de dégustation et réhabilitations patrimoniales.</p>
+        </div>
+        <div class="metric-card reveal-on-scroll">
+          <span class="metric-num">100<em>%</em></span>
+          <span class="metric-title">Démarche in-situ</span>
+          <p class="metric-desc">Chaque tracé naît d'une analyse bioclimatique, topographique et géologique rigoureuse.</p>
+        </div>
+        <div class="metric-card reveal-on-scroll">
+          <span class="metric-num">03</span>
+          <span class="metric-title">Distinctions mondiales</span>
+          <p class="metric-desc">Lauréats Prix d'Excellence d'Architecture Contemporaine & publications AD.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 02: PROJET SIGNATURE + SÉLECTION COMPLÈTE -->
+    <section class="project-section" id="projets" aria-labelledby="projets-title">
+      <div class="shell project-topline">
+        <p class="section-label"><span class="section-num">02</span> PROJETS & CRÉATIONS</p>
+        <span class="project-count">UNE COLLECTION / QUATRE HORIZONS</span>
+      </div>
+
+      <!-- HERO PROJECT -->
+      <div class="shell project-headline">
+        <h2 id="projets-title">Horizon <em>01.</em></h2>
+      </div>
+      <div class="project-image-wrap">
+        <img src="assets/aurea-project.webp" width="1600" height="900" loading="lazy" alt="Villa contemporaine éclairée dominant les falaises de la côte Atlantique au crépuscule" />
+      </div>
+      <div class="shell project-bottom">
+        <p>Une résidence face à l'infini. La roche, la lumière et l'océan composent une architecture dont la force réside dans l'épure et la fusion totale avec la falaise.</p>
+        <div class="project-specs">
+          <span>RÉSIDENCE PRIVÉE — CÔTE ATLANTIQUE</span>
+          <span class="spec-detail">680 m² · Pierre calcaire & Verre structurel · 2025</span>
+        </div>
+      </div>
+
+      <!-- SECONDARY PROJECTS GRID -->
+      <div class="shell projects-grid">
+        <article class="project-card reveal-on-scroll">
+          <div class="project-card-media">
+            <div class="project-card-overlay"></div>
+            <div class="project-card-badge">NORMANDIE</div>
+            <div class="project-card-visual project-visual-manoir"></div>
+          </div>
+          <div class="project-card-info">
+            <span class="project-card-num">02 / RÉSIDENCE</span>
+            <h3>Manoir Minéral</h3>
+            <p>Réhabilitation poétique d'un domaine du XVIIIe siècle, sublimé par un atrium de verre et des menuiseries d'acier noirci.</p>
+            <div class="project-card-meta">
+              <span>Bayeux, France</span>
+              <span>420 m²</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal-on-scroll">
+          <div class="project-card-media">
+            <div class="project-card-overlay"></div>
+            <div class="project-card-badge">PROVENCE</div>
+            <div class="project-card-visual project-visual-pavillon"></div>
+          </div>
+          <div class="project-card-info">
+            <span class="project-card-num">03 / PAVILLON</span>
+            <h3>Pavillon d'Ombre</h3>
+            <p>Béton sablé teinté ocre, claustras en noyer massif et bassins réfléchissants qui dialoguent avec la pinède du Luberon.</p>
+            <div class="project-card-meta">
+              <span>Gordes, France</span>
+              <span>310 m²</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal-on-scroll">
+          <div class="project-card-media">
+            <div class="project-card-overlay"></div>
+            <div class="project-card-badge">ALPES SUISSES</div>
+            <div class="project-card-visual project-visual-atelier"></div>
+          </div>
+          <div class="project-card-info">
+            <span class="project-card-num">04 / REFUGE</span>
+            <h3>Atelier Boréal</h3>
+            <p>Structure légère en bois brûlé (Shou Sugi Ban) et baies monumentales cadrent les sommets enneigés avec une sobriété monacale.</p>
+            <div class="project-card-meta">
+              <span>Valais, Suisse</span>
+              <span>260 m²</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTION 03: NOS PILIERS D'EXPERTISE -->
+    <section class="expertise-section" id="expertise" aria-labelledby="expertise-title">
+      <div class="shell">
+        <div class="expertise-head">
+          <p class="section-label"><span class="section-num">03</span> FONDATIONS & ENGAGEMENT</p>
+          <h2 id="expertise-title">L'art de sculpter<br /><em>le vide et la matière.</em></h2>
+        </div>
+
+        <div class="pillars-grid">
+          <div class="pillar-box reveal-on-scroll">
+            <span class="pillar-index">I</span>
+            <h3>Ancrage Géologique & In-Situ</h3>
+            <p>Chaque projet commence par une écoute attentive du terrain. Nous ne posons pas un édifice sur un sol : nous faisons émerger le bâtiment de sa géographie et de son histoire.</p>
+            <ul class="pillar-details">
+              <li>Matériaux locaux et nobles sourcés dans un rayon court</li>
+              <li>Implantation respectant la course solaire et les vents dominants</li>
+              <li>Harmonie topographique sans terrassement agressif</li>
+            </ul>
+          </div>
+
+          <div class="pillar-box reveal-on-scroll">
+            <span class="pillar-index">II</span>
+            <h3>La Poétique de la Lumière</h3>
+            <p>La lumière n'est pas un accessoire : c'est notre matière première. Nous ciselons les percées et les parois pour créer des chorégraphies d'ombres évolutives du lever au crépuscule.</p>
+            <ul class="pillar-details">
+              <li>Cadrages photographiques sur le paysage naturel</li>
+              <li>Études d'héliotropisme et protection solaire passive</li>
+              <li>Éclairage nocturne architectural feutré et non invasif</li>
+            </ul>
+          </div>
+
+          <div class="pillar-box reveal-on-scroll">
+            <span class="pillar-index">III</span>
+            <h3>Pérennité & Haute Précision</h3>
+            <p>La beauté véritable résiste à l'usure des modes. Nous collaborons avec des compagnons et artisans d'art pour concevoir des ouvrages pérennes qui acquièrent une patine noble.</p>
+            <ul class="pillar-details">
+              <li>Détails d'assemblage invisibles et finitions manuelles</li>
+              <li>Performance thermique et acoustique de pointe (RE2020+)</li>
+              <li>Suivi de chantier rigoureux et direction d'exécution dédiée</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 04: NOTRE MÉTHODE DE PROJET -->
+    <section class="method-section" id="methode" aria-labelledby="method-title">
+      <div class="shell">
+        <div class="method-topline">
+          <p class="section-label light"><span class="section-num">04</span> PROCESSUS EXCLUSIF</p>
+          <span class="method-sub">DU PREMIER CROQUIS AU DERNIER DÉTAIL</span>
+        </div>
+        <h2 id="method-title">Une méthode en quatre actes,<br /><em>menée sans compromis.</em></h2>
+
+        <div class="steps-container">
+          <div class="step-item reveal-on-scroll">
+            <div class="step-header">
+              <span class="step-num">01</span>
+              <h4>Immersion & Révélation</h4>
+            </div>
+            <p>Arpentage minutieux du site, relevé sensitif de la lumière, étude géologique et recueil exhaustif de vos rituels de vie et inspirations profondes.</p>
+          </div>
+
+          <div class="step-item reveal-on-scroll">
+            <div class="step-header">
+              <span class="step-num">02</span>
+              <h4>Conception & Esquisse</h4>
+            </div>
+            <p>Naissance du parti architectural, maquettes volumétriques physiques, modélisation 3D photoréaliste et simulation des transparences solaires.</p>
+          </div>
+
+          <div class="step-item reveal-on-scroll">
+            <div class="step-header">
+              <span class="step-num">03</span>
+              <h4>Matérialité & Ouvrage</h4>
+            </div>
+            <p>Élaboration du dossier technique de consultation, sélection d'artisans d'art certifiés, choix des échantillons en carrières et calepinement d'orfèvre.</p>
+          </div>
+
+          <div class="step-item reveal-on-scroll">
+            <div class="step-header">
+              <span class="step-num">04</span>
+              <h4>Chantier & Révélation</h4>
+            </div>
+            <p>Direction artistique exclusive, contrôle hebdomadaire des alignements, mise en lumière finale et remise des clés de votre sanctuaire intemporel.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 05: CONTACT & CONSULTATION PRIVÉE -->
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="shell contact-layout">
+        <div class="contact-intro">
+          <p class="section-label light"><span class="section-num">05</span> RENCONTRE & CONSULTATION</p>
+          <h2 id="contact-title">Donnons corps à<br />votre <em>prochain lieu.</em></h2>
+          <p class="contact-lead">Chaque grande œuvre débute par une écoute attentive. Que vous possédiez un terrain d'exception ou un édifice patrimonial à sublimer, échangeons en toute confidentialité.</p>
+          
+          <div class="ateliers-list">
+            <div class="atelier-item">
+              <span class="atelier-city">PARIS</span>
+              <address>
+                14, rue de Bellechasse — 75007 Paris<br/>
+                T. +33 (0)1 48 00 22 10<br/>
+                <a href="mailto:paris@aurea-architecture.com">paris@aurea-architecture.com</a>
+              </address>
+            </div>
+            <div class="atelier-item">
+              <span class="atelier-city">BIARRITZ & CÔTE ATLANTIQUE</span>
+              <address>
+                8, impasse des Falaises — 64200 Biarritz<br/>
+                T. +33 (0)5 59 24 18 90<br/>
+                <a href="mailto:biarritz@aurea-architecture.com">biarritz@aurea-architecture.com</a>
+              </address>
+            </div>
+          </div>
+        </div>
+
+        <!-- FORMULAIRE HAUT DE GAMME -->
+        <div class="contact-card">
+          <form class="consultation-form" id="consultation-form" action="#" method="POST" novalidate>
+            <h3 class="form-title">Consultation Préalable</h3>
+            <p class="form-hint">Nous vous recontactons sous 48 heures pour organiser un échange privé.</p>
+
+            <div class="form-group">
+              <label for="form-name">Votre nom complet</label>
+              <input type="text" id="form-name" name="name" placeholder="ex. Éléonore de Saint-Clair" required />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="form-email">Adresse e-mail</label>
+                <input type="email" id="form-email" name="email" placeholder="contact@domaine.com" required />
+              </div>
+              <div class="form-group">
+                <label for="form-phone">Téléphone</label>
+                <input type="tel" id="form-phone" name="phone" placeholder="+33 6 00 00 00 00" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="form-type">Nature de votre projet</label>
+              <select id="form-type" name="type">
+                <option value="residence">Résidence contemporaine neuve</option>
+                <option value="renovation">Restauration & rénovation remarquable</option>
+                <option value="hospitality">Lieu d'art, hôtellerie ou domaine viticole</option>
+                <option value="autre">Autre vision sur-mesure</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="form-location">Localisation envisagée du terrain ou bien</label>
+              <input type="text" id="form-location" name="location" placeholder="ex. Bassin d'Arcachon, Provence, Suisse..." />
+            </div>
+
+            <div class="form-group">
+              <label for="form-message">Parlez-nous de vos aspirations</label>
+              <textarea id="form-message" name="message" rows="4" placeholder="Ambiances désirées, superficie envisagée, calendrier..."></textarea>
+            </div>
+
+            <button type="submit" class="cta-primary form-submit">
+              <span>Transmettre votre demande</span>
+              <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3.5 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <p class="form-privacy">Confidentialité garantie. Aucune sollicitation commerciale extérieure.</p>
+            <div class="form-status" id="form-status" role="alert" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SUPER FOOTER LUXE & ÉDITORIAL -->
+  <footer class="mega-footer" role="contentinfo">
+    <div class="shell">
+      <!-- FOOTER STATEMENT -->
+      <div class="footer-hero-statement">
+        <span class="footer-kicker">AURÉA ARCHITECTURE STUDIO · PARIS — BIARRITZ — GENÈVE</span>
+        <h2 class="footer-big-title">Bâtir l'indicible,<br /><em>révéler le lieu.</em></h2>
+        <div class="footer-newsletter-wrap">
+          <p class="newsletter-desc">Abonnez-vous à nos <em>Cahiers de Matières</em> : une publication annuelle confidentielle sur l'architecture et les paysages d'exception.</p>
+          <form class="footer-newsletter-form" id="newsletter-form" action="#" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Inscrit avec succès';">
+            <label for="footer-email" class="visually-hidden">Votre email pour la newsletter</label>
+            <input type="email" id="footer-email" placeholder="Votre adresse e-mail" required />
+            <button type="submit">Rejoindre le cercle</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- FOOTER 4-COLUMN NAVIGATION -->
+      <div class="footer-columns-grid">
+        <div class="footer-col">
+          <div class="footer-brand">
+            <svg class="brand-mark" viewBox="0 0 34 38" fill="none" aria-hidden="true">
+              <path d="M3 34.5 17 3.5 31 34.5" stroke="currentColor" stroke-width="1.35" />
+              <path d="M9.2 23.5h15.6" stroke="currentColor" stroke-width="1.35" />
+              <path d="M17 3.5v18" stroke="currentColor" stroke-width="0.8" opacity=".65" />
+            </svg>
+            <strong>AURÉA</strong>
+          </div>
+          <p class="footer-about">Atelier d'architecture contemporaine fondé sur la recherche de la juste mesure, la sincérité des matériaux et l'émotion spatiale.</p>
+          <div class="footer-time-badge">
+            <span class="live-dot" aria-hidden="true"></span>
+            <span>HEURE DE L'ATELIER : </span>
+            <time id="studio-time">--:-- CET</time>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <span class="col-title">Navigation</span>
+          <ul class="footer-links">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#projets">Sélection de Projets</a></li>
+            <li><a href="#expertise">Piliers & Vision</a></li>
+            <li><a href="#methode">Méthode de Conception</a></li>
+            <li><a href="#approche">Le Studio</a></li>
+            <li><a href="#contact">Consultation Privée</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <span class="col-title">Typologies & Recherches</span>
+          <ul class="footer-links">
+            <li><a href="#projets">Résidences Côtières</a></li>
+            <li><a href="#projets">Refuges de Montagne</a></li>
+            <li><a href="#projets">Domaines & Réhabilitations</a></li>
+            <li><a href="#expertise">Matériauthèque Minérale</a></li>
+            <li><a href="#methode">Ingénierie Solaire</a></li>
+            <li><a href="#contact">Dossier de Presse (2026)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <span class="col-title">Bureaux & Correspondance</span>
+          <div class="footer-office-block">
+            <strong>Paris VIIe</strong>
+            <p>14 Rue de Bellechasse, 75007 Paris</p>
+          </div>
+          <div class="footer-office-block">
+            <strong>Biarritz</strong>
+            <p>8 Impasse des Falaises, 64200 Biarritz</p>
+          </div>
+          <div class="footer-socials">
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+            <span aria-hidden="true">/</span>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+            <span aria-hidden="true">/</span>
+            <a href="https://archdaily.com" target="_blank" rel="noopener" aria-label="ArchDaily">ArchDaily</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER SUB-BAR -->
+      <div class="footer-bottom-bar">
+        <div class="footer-legal">
+          <span>AURÉA ARCHITECTURE © 2026. TOUS DROITS RÉSERVÉS.</span>
+          <div class="legal-links">
+            <a href="#">Mentions Légales</a>
+            <span class="sep">·</span>
+            <a href="#">Confidentialité</a>
+            <span class="sep">·</span>
+            <a href="#">Accessibilité</a>
+          </div>
+        </div>
+        <a href="#accueil" class="back-to-top">
+          <span>HAUT DE PAGE</span>
+          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 13V3m-4 4 4-4 4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
